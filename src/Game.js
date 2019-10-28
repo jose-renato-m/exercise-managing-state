@@ -21,6 +21,17 @@ class Game extends Component {
     return [value1, value2, value3, proposedAnswer];
   };
 
+  updateState = () => {
+  const gameNums = this.generateNums();
+    this.setState(prevState => ({
+    value1: gameNums[0],
+    value2: gameNums[1],
+    value3: gameNums[2],
+    proposedAnswer: gameNums[3]
+    }));
+  };
+
+
 }
 
 export default Game;
