@@ -31,6 +31,13 @@ class Game extends Component {
     }));
   };
 
+  checkAnswer = answer => {
+    const isEqual =
+      this.state.value1 + this.state.value2 + this.state.value3 ===
+      this.state.proposedAnswer;
+    return answer === isEqual;
+  };
+
 
 }
 
