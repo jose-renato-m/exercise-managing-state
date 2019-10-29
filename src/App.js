@@ -16,7 +16,9 @@ class App extends Component {
     numCorrect: isCorrect ? currState.numCorrect + 1 : currState.numCorrect
    }));
  };
-  render() {
+ renderGame = game => <Game onButtonClick={this.handleButtonClick} />
+
+ render() {
     return (
       <div className="App">
         <header className="App-header">
