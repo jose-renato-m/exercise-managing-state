@@ -19,7 +19,7 @@ class App extends Component {
    this.setState(currState => ({
      numQuestions: currState.numQuestions + 1,
    }));
- renderGame = game => <Game onButtonClick={this.handleButtonClick} />
+ };
 
  render() {
    return (
