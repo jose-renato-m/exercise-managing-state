@@ -27,6 +27,14 @@ class App extends Component {
          <p>Exercise - Managing State</p>
        </header>
        <main className="App-main">
+         <Game onButtonClick={this.handleButtonClick} />
+         {this.renderGame()}
+         <Score
+           numQuestion={this.state.numQuestions}
+           numCorrect={this.state.numCorrect}
+         />
+       </main>
+     </div>
         <div className="game">
           <h2>Mental Math</h2>
           <div className="equation">
