@@ -33,14 +33,6 @@ class App extends Component {
        <Game handleAnswer={this.handleAnswer} />
        <Score numCorrect={this.state.correctAnswer} numQuestions={this.state.numQuestions} />
        </div>
-       <main className="App-main">
-         <Game onButtonClick={this.handleButtonClick} />
-         {this.renderGame()}
-         <Score
-           numQuestion={this.state.numQuestions}
-           numCorrect={this.state.numCorrect}
-         />
-       </main>
      </div>        
     );
   }
