@@ -40,7 +40,10 @@ class Game extends Component {
     const { value1, value2, value3, proposedAnswer } = this.state;
     const corrAnswer = value1 + value2 + value3;
 
-    
+    return (
+      (corrAnswer === proposedAnswer && givenAnswer === 'true') ||
+      (corrAnswer !== proposedAnswer && givenAnswer === 'false')
+    );
   }
 
   render () {
