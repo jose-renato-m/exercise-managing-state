@@ -52,7 +52,18 @@ class Game extends Component {
       this.state.proposedAnswer
     }`
   );
-
+  return (
+   <div className="game">
+     <h2>Mental Math</h2>
+     <div className="equation">
+       <p className="text">{`${this.state.value1} + ${this.state.value2} + ${
+         this.state.value3
+  } = ${this.state.proposedAnswer}`}</p>
+     </div>
+     <button onClick={e => this.onButtonClick(e)}>True</button>
+     <button onClick={this.onButtonClick}>False</button>
+   </div>
+  );
   }
 }
 
