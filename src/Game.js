@@ -47,7 +47,7 @@ class Game extends Component {
   }
 
   render () {
-    
+    const { value1, value2, value3, proposedAnswer } = this.state;
   return (
    <div className="game">
      <h2>Mental Math</h2>
