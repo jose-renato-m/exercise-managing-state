@@ -47,12 +47,7 @@ class Game extends Component {
   }
 
   render () {
-  console.log(`Game component rendered`);
-  console.log(
-    `${this.state.value1 + this.state.value2 + this.state.value3} === ${
-      this.state.proposedAnswer
-    }`
-  );
+    
   return (
    <div className="game">
      <h2>Mental Math</h2>
