@@ -3,7 +3,7 @@ import React from 'react';
 const Score = props => {
  return (
    <p className="text">
-     Your Score: {numCorrect} / {numQuestions}
+     Your Score: {props.numCorrect}/{props.numQuestions}
    </p>
   );
 };
