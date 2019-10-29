@@ -38,6 +38,12 @@ class Game extends Component {
     return answer === isEqual;
   };
 
+  onButtonClick = e => {
+    this.updateState();
+    const answer = Boolean(e.target.innerText === 'False' ? false : true);
+    const isCorrect = this.checkAnswer(answer);
+    this.props.onButtonClick(isCorrect);
+  };
 
 }
 
