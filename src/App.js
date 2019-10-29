@@ -28,6 +28,11 @@ class App extends Component {
          <img src={logo} className="App-logo" alt="logo" />
          <h1 className="App-title">ReactND - Coding Practice</h1>
        </header>
+       <div className="game">
+       <h2>Mental Math</h2>
+       <Game handleAnswer={this.handleAnswer} />
+       <Score numCorrect={this.state.correctAnswer} numQuestions={this.state.numQuestions} />
+       </div>
        <main className="App-main">
          <Game onButtonClick={this.handleButtonClick} />
          {this.renderGame()}
