@@ -45,6 +45,15 @@ class Game extends Component {
     this.props.onButtonClick(isCorrect);
   };
 
+  render () {
+  console.log(`Game component rendered`);
+  console.log(
+    `${this.state.value1 + this.state.value2 + this.state.value3} === ${
+      this.state.proposedAnswer
+    }`
+  );
+
+  }
 }
 
 export default Game;
