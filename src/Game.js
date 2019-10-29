@@ -53,14 +53,8 @@ class Game extends Component {
         <div className="equation">
           <p className="text">{`${value1} + ${value2} + ${value3} = ${proposedAnswer}`}</p>
         </div>
-     <h2>Mental Math</h2>
-     <div className="equation">
-       <p className="text">{`${this.state.value1} + ${this.state.value2} + ${
-         this.state.value3
-  } = ${this.state.proposedAnswer}`}</p>
-     </div>
-     <button onClick={e => this.onButtonClick(e)}>True</button>
-     <button onClick={this.onButtonClick}>False</button>
+        <button onClick={e => this.onButtonClick(e)}>True</button>
+        <button onClick={this.onButtonClick}>False</button>
    </div>
   );
   }
