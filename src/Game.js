@@ -36,7 +36,12 @@ class Game extends Component {
     this.props.handleAnswer(answerWasCorrect);
   };
 
-  
+  evaluateAnswer(givenAnswer) {
+    const { value1, value2, value3, proposedAnswer } = this.state;
+    const corrAnswer = value1 + value2 + value3;
+
+    
+  }
 
   render () {
   console.log(`Game component rendered`);
