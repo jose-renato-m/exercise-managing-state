@@ -20,12 +20,12 @@ class Game extends Component {
     return [value1, value2, value3, proposedAnswer];
   };
 
-  updateState = () => {  
-   this.setState(prevState => ({
-     value1: gameNums[0],
-     value2: gameNums[1],
-     value3: gameNums[2],
-     proposedAnswer: gameNums[3]
+  updateState = newValuesArray => {  
+   this.setState(currState => ({
+     value1: newValuesArray[0],
+     value2: newValuesArray[1],
+     value3: newValuesArray[2],
+     proposedAnswer: newValuesArray[3]
     }));
   };
 
