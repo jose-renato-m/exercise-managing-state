@@ -10,12 +10,15 @@ class App extends Component {
    numQuestions: 0
  };
 
- handleButtonClick = isCorrect => {
+ handleAnswer = answerWasCorrect => {
+   if (answerWasCorrect) {
+     this.setState(currState => ({
+       correctAnswer: currState.correctAsnwer + 1,     
+    }));
+   }
    this.setState(currState => ({
-    numQuestions: currState.numQuestions + 1,
-    numCorrect: isCorrect ? currState.numCorrect + 1 : currState.numCorrect
+     numQuestions: currState.numQuestions + 1,
    }));
- };
  renderGame = game => <Game onButtonClick={this.handleButtonClick} />
 
  render() {
