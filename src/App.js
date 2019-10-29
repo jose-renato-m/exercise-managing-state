@@ -34,19 +34,7 @@ class App extends Component {
            numCorrect={this.state.numCorrect}
          />
        </main>
-     </div>
-        <div className="game">
-          <h2>Mental Math</h2>
-          <div className="equation">
-            <p className="text">{`${value1} + ${value2} + ${value3} = ${proposedAnswer}`}</p>
-          </div>
-          <button>True</button>
-          <button>False</button>
-          <p className="text">
-            Your Score: {numCorrect}/{numQuestions}
-          </p>
-        </div>
-      </div>
+     </div>        
     );
   }
 }
