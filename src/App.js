@@ -9,6 +9,13 @@ class App extends Component {
    numQuestions: 0,
    numCorrect: 0
  };
+
+ handleButtonClick = isCorrect => {
+   this.setState(currState => ({
+    numQuestions: currState.numQuestions + 1,
+    numCorrect: isCorrect ? currState.numCorrect + 1 : currState.numCorrect
+   }));
+ };
   render() {
     return (
       <div className="App">
