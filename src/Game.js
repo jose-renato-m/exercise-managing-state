@@ -29,11 +29,11 @@ class Game extends Component {
     }));
   };
 
-  checkAnswer = answer => {
-    const isEqual =
-      this.state.value1 + this.state.value2 + this.state.value3 ===
-      this.state.proposedAnswer;
-    return answer === isEqual;
+  handleAnswer = event => {
+    const newValuesArray = this.makeNewQuestion();
+    this.updateState(newValuesArray);
+    const answerWasCorrect = this.evaluateAnswer(event.target.name);
+    this.props.handleAnswer(answerWasCorrect);
   };
 
   onButtonClick = e => {
