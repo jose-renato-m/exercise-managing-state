@@ -48,8 +48,11 @@ class Game extends Component {
 
   render () {
     const { value1, value2, value3, proposedAnswer } = this.state;
-  return (
-   <div className="game">
+    return (
+      <div>
+        <div className="equation">
+          <p className="text">{`${value1} + ${value2} + ${value3} = ${proposedAnswer}`}</p>
+        </div>
      <h2>Mental Math</h2>
      <div className="equation">
        <p className="text">{`${this.state.value1} + ${this.state.value2} + ${
