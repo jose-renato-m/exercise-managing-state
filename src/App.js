@@ -19,12 +19,14 @@ class App extends Component {
  renderGame = game => <Game onButtonClick={this.handleButtonClick} />
 
  render() {
-    return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">ReactND - Coding Practice</h1>
-        </header>
+   return (
+     <div className="App">
+       <header className="App-header">
+         <img src={logo} className="App-logo" alt="logo" />
+         <h1 className="App-title">ReactND - Coding Practice</h1>
+         <p>Exercise - Managing State</p>
+       </header>
+       <main className="App-main">
         <div className="game">
           <h2>Mental Math</h2>
           <div className="equation">
