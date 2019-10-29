@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Game from './Game.js';
 import Score from './Score.js';
+import Game from './Game.js';
 
 class App extends Component {
  state = {
-   numQuestions: 0,
-   numCorrect: 0
+   correctAnswer: 0,
+   numQuestions: 0
  };
 
  handleButtonClick = isCorrect => {
