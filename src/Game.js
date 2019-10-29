@@ -36,12 +36,7 @@ class Game extends Component {
     this.props.handleAnswer(answerWasCorrect);
   };
 
-  onButtonClick = e => {
-    this.updateState();
-    const answer = Boolean(e.target.innerText === 'False' ? false : true);
-    const isCorrect = this.checkAnswer(answer);
-    this.props.onButtonClick(isCorrect);
-  };
+  
 
   render () {
   console.log(`Game component rendered`);
